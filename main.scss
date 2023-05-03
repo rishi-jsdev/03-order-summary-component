@@ -67,15 +67,40 @@ html {
     }
 
     &__plan {
+      width: 85%;
       display: flex;
-      gap: 3rem;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem;
+      background-color: $very_pale_blue;
+      padding: 1.1rem;
+      border-radius: 10px;
     }
+
+ 
+  }
+
+  .icon-music {
   }
 
   .plan-type {
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: $dark_blue;
   }
 
   .plan-amount {
+    font-size: 1.5rem;
+    color: $desaturated_blue;
+    font-weight: 500;
+  }
+
+  .change-plan-link {
+    display: inline;
+    font-weight: 900;
+    font-size: 1.4rem;
+
   }
 
   .btn {
