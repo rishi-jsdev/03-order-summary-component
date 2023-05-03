@@ -10,7 +10,7 @@ $width-desktop: 144rem;
 $primary-color-01: $pale_blue;
 $primary-color-02: $bright_blue;
 
-$font-family-primary: 'Red Hat Display', sans-serif;
+$font-family-primary: "Red Hat Display", sans-serif;
 
 html {
   /* 62.5% of 16px browser font size is 10px */
@@ -37,9 +37,13 @@ html {
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 2.5rem;
+
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
   }
 
   .order-summary img {
@@ -48,12 +52,23 @@ html {
 
   .summary {
     &__heading {
+      font-size: 2rem;
+      font-weight: 900;
+      color: $dark_blue;
     }
 
     &__paragraph {
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-align: center;
+      width: 80%;
+      color: $desaturated_blue;
+      line-height: 2.5rem;
     }
 
     &__plan {
+      display: flex;
+      gap: 3rem;
     }
   }
 
