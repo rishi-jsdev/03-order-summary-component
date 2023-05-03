@@ -1,36 +1,73 @@
+$pale_blue: hsl(225, 100%, 94%);
+$bright_blue: hsl(245, 75%, 52%);
+$very_pale_blue: hsl(225, 100%, 98%);
+$desaturated_blue: hsl(224, 23%, 55%);
+$dark_blue: hsl(223, 47%, 23%);
+
+$width-mobile: 37.5rem;
+$width-desktop: 144rem;
+
+$primary-color-01: $pale_blue;
+$primary-color-02: $bright_blue;
+
+$font-family-primary: 'Red Hat Display', sans-serif;
+
+html {
+  /* 62.5% of 16px browser font size is 10px */
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-}
-
-.order-summary {
-}
-
-.summary {
-  &__heading {
+@media screen and (max-width: 37.5rem) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color-01;
+    font-family: $font-family-primary;
   }
 
-  &__paragraph {
+  .order-summary {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
   }
 
-  &__plan {
-  }
-}
-
-.plan-type {
-}
-
-.plan-amount {
-}
-
-.btn {
-  &--primary {
+  .order-summary img {
+    width: 100%;
   }
 
-  &--secondary {
+  .summary {
+    &__heading {
+    }
+
+    &__paragraph {
+    }
+
+    &__plan {
+    }
+  }
+
+  .plan-type {
+  }
+
+  .plan-amount {
+  }
+
+  .btn {
+    &--primary {
+    }
+
+    &--secondary {
+    }
   }
 }
