@@ -146,7 +146,43 @@ html {
   }
 }
 
-@media screen and (min-width: $width-desktop) {
+@media screen and (min-width: 485px) {
+  .summary {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 545px) {
+  .summary {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 623px) {
+  .summary {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 727px) {
+  .summary {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 872px) {
+  .summary {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1090px) {
+  .summary {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   body {
     background: url(./images/pattern-background-desktop.svg) repeat-x;
     background-color: $primary-color-01;
