@@ -13,7 +13,6 @@ $primary-color-02: $bright_blue;
 $font-family-primary: "Red Hat Display", sans-serif;
 
 html {
-  /* 62.5% of 16px browser font size is 10px */
   font-size: 62.5%;
 }
 
@@ -22,6 +21,8 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
+
 
 @media screen and (min-width: $width-mobile) {
   body {
