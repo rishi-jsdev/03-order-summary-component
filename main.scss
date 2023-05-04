@@ -31,6 +31,8 @@ html {
     align-items: center;
     background-color: $primary-color-01;
     font-family: $font-family-primary;
+    background: url(./images/pattern-background-mobile.svg) repeat-x;
+    background-color: $primary-color-01;
   }
 
   .summary {
@@ -135,12 +137,34 @@ html {
       background-color: $primary-color-02;
       border-radius: 10px;
       color: $very_pale_blue;
-      box-shadow: 0px 40px 30px -20px rgba(0,0,0,0.5);
+      box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.5);
     }
-    
+
     &--secondary {
       text-align: center;
       color: $desaturated_blue;
+    }
+  }
+}
+
+@media screen and (min-width: $width-desktop) {
+  body {
+    background: url(./images/pattern-background-desktop.svg) repeat-x;
+    background-color: $primary-color-01;
+  }
+
+  .summary {
+    width: 30%;
+  }
+
+  .btn {
+    cursor: pointer;
+    &--primary:hover {
+      background-color: $dark_blue;
+    }
+
+    &--secondary:hover {
+      color: $dark_blue;
     }
   }
 }

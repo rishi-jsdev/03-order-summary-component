@@ -17,6 +17,8 @@ html {
     align-items: center;
     background-color: hsl(225, 100%, 94%);
     font-family: "Red Hat Display", sans-serif;
+    background: url(./images/pattern-background-mobile.svg) repeat-x;
+    background-color: hsl(225, 100%, 94%);
   }
   .summary {
     width: 90%;
@@ -112,5 +114,23 @@ html {
   .btn--secondary {
     text-align: center;
     color: hsl(224, 23%, 55%);
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background: url(./images/pattern-background-desktop.svg) repeat-x;
+    background-color: hsl(225, 100%, 94%);
+  }
+  .summary {
+    width: 30%;
+  }
+  .btn {
+    cursor: pointer;
+  }
+  .btn--primary:hover {
+    background-color: hsl(223, 47%, 23%);
+  }
+  .btn--secondary:hover {
+    color: hsl(223, 47%, 23%);
   }
 }
