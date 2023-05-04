@@ -16,6 +16,7 @@ html {
     align-items: center;
     font-family: "Red Hat Display", sans-serif;
     background: url(./images/pattern-background-mobile.svg) repeat-x;
+    background-size: contain;
     background-color: hsl(225, 100%, 94%);
   }
   .summary {
@@ -30,7 +31,7 @@ html {
     overflow: hidden;
   }
   .summary__info {
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +51,7 @@ html {
     line-height: 2.5rem;
   }
   .summary__plan {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -94,7 +95,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     gap: 1rem;
   }
   .btn {
@@ -118,6 +119,7 @@ html {
   body {
     background: url(./images/pattern-background-desktop.svg) repeat-x;
     background-color: hsl(225, 100%, 94%);
+    background-size: contain;
   }
   .summary {
     width: 30%;
