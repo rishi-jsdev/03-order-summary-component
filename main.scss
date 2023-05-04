@@ -4,8 +4,8 @@ $very_pale_blue: hsl(225, 100%, 98%);
 $desaturated_blue: hsl(224, 23%, 55%);
 $dark_blue: hsl(223, 47%, 23%);
 
-$width-mobile: 37.5rem;
-$width-desktop: 144rem;
+$width-mobile: 375px;
+$width-desktop: 1440px;
 
 $primary-color-01: $pale_blue;
 $primary-color-02: $bright_blue;
@@ -23,7 +23,7 @@ html {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 37.5rem) {
+@media screen and (min-width: $width-mobile) {
   body {
     min-height: 100vh;
     display: flex;
@@ -33,24 +33,27 @@ html {
     font-family: $font-family-primary;
   }
 
-  .order-summary {
+  .summary {
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    gap: 3rem;
 
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-  }
 
-  .order-summary img {
-    width: 100%;
-  }
+    &__info {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+    }
 
-  .summary {
     &__heading {
       font-size: 2rem;
       font-weight: 900;
@@ -61,7 +64,6 @@ html {
       font-size: 1.6rem;
       font-weight: 500;
       text-align: center;
-      width: 80%;
       color: $desaturated_blue;
       line-height: 2.5rem;
     }
@@ -71,16 +73,22 @@ html {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      gap: 2rem;
       background-color: $very_pale_blue;
       padding: 1.1rem;
       border-radius: 10px;
     }
+  }
 
- 
+  .summary img {
+    width: 100%;
   }
 
   .icon-music {
+    flex: 1;
+  }
+
+  .plan-details {
+    flex: 2;
   }
 
   .plan-type {
@@ -97,18 +105,42 @@ html {
   }
 
   .change-plan-link {
-    display: inline;
+    flex: 1;
     font-weight: 900;
     font-size: 1.4rem;
-
   }
 
-  .btn {
-    width: 85%;
-    &--primary {
-    }
+  a.change-plan-link:hover {
+    color: $dark_blue;
+  }
 
+  a.change-plan-link:active,
+  a.change-plan-link:visited {
+    color: $bright_blue;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%;
+    gap: 1rem;
+  }
+  .btn {
+    padding: 2rem 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    &--primary {
+      border: none;
+      background-color: $primary-color-02;
+      border-radius: 10px;
+      color: $very_pale_blue;
+      box-shadow: 0px 40px 30px -20px rgba(0,0,0,0.5);
+    }
+    
     &--secondary {
+      text-align: center;
+      color: $desaturated_blue;
     }
   }
 }
